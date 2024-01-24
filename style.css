@@ -1,263 +1,128 @@
-table, tr{
-    width:100%;
+table, tr {
+    width: 95%;
 }
-td{
-    text-align:center;
-    border: black solid 3px;}
-#f{
+
+td {
+    text-align: center;
+    border: #000000 solid 3px; /* black */
+}
+#text{
+	background-color: #0098Da;
+}
+body {
+    background-color: #F5FBF5; /* light gray */
+}
+
+#menu {
+    background-color: #0098Da; /* soft blue */
+}
+
+#img {
+    background-color: #ECF0F1; /* light grayish blue */
+}
+
+#f {
     height: 20px;
-    background-color:black;
-    color: white;
+    background-color: #333333; /* dark gray */
+    color: #FFFFFF; /* white */
 }
-    button {
-        width: 70%;
-        height: 22px;
-        background-color: orangered;
-        border: black solid 1px;
-        margin: 2px;
-    }
-    #gdd, #kldd, #sdd, #kudd, #hdd, #krdd, #wdd, #cdd{
-        background-color: #ffffff;
+
+button {
+    width: 80%;
+    height: 32px;
+    background-color: orangered;
+    border: #000000 solid 1px;
+    margin: 2px;
+}
+
+#g, #kl, #s, #ku, #h, #kr, #w, #c,
+#gm, #klm, #sm, #kum, #hm, #krm, #wm, #cm {
+    background-color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    display: none;
+    color: black;
+    font-size: 150%;
+background-color: #0098Da;
+    td {
+        text-align: center;
+        border: #000000 solid 3px; /* black */
         width: 50%;
-        height: 160px;
-        text-align: center;
-        display: none;
-        color: black;
-        td{
-            text-align:center;
-            border: black solid 3px;
-            width: 50%;
-            height: 200px
-            }
     }
-    #gd, #kld, #sd, #kud, #hd, #krd, #wd, #cd{
-        background-color: #ffffff;
-        width: 50%;
-        height: 160px;
-        text-align: center;
-        display: none;
-        color: black;
-        td{
-            text-align:center;
-            border: black solid 3px;
-            width: 50%;
-            height: 200px
-            }
-    }
-    #g, #kl, #s, #ku, #h, #kr, #w, #c{
-        background-color: #ffffff;
-        width: 50%;
-        height: 160px;
-        text-align: center;
-        display: none;
-        color: black;
-        td{
-            text-align:center;
-            border: black solid 3px;
-            width: 50%;
-            height: 200px
-            }
-    }
-    #gm, #klm, #sm, #kum, #hm, #krm, #wm, #cm{
-        background-color: #ffffff;
-        width: 100%;
-        height: 160px;
-        text-align: center;
-        display: none;
-        color: black;
-        td{
-            text-align:center;
-            border: black solid 3px;
-            width: 100%;
-            height: 200px
-            }
-    }
-    #gmm, #klmm, #smm, #kumm, #hmm, #krmm, #wmm, #cmm{
-        background-color: #ffffff;
-        width: 100%;
-        height: 160px;
-        text-align: center;
-        display: none;
-        color: black;
-        td{
-            text-align:center;
-            border: black solid 3px;
-            width: 100%;
-            height: 200px
-            }
-    }
-    #gmmm, #klmmm, #smmm, #kummm, #hmmm, #krmmm, #wmmm, #cmmm{
-        background-color: #ffffff;
-        width: 100%;
-        height: 160px;
-        text-align: center;
-        display: none;
-        color: black;
-        td{
-            text-align:center;
-            border: black solid 3px;
-            width: 100%;
-            height: 200px;
-            }
+}
+
+#g.active, #kl.active, #s.active, #ku.active, #h.active, #kr.active, #w.active, #c.active,
+#gm.active, #klm.active, #sm.active, #kum.active, #hm.active, #krm.active, #wm.active, #cm.active {
+    display: block;
+    color: black;
+}
+
+@media only screen and (min-width: 1302px) and (orientation: landscape) {
+    #d {
+        display: block;
     }
 
+    #m {
+        display: none;
+    }
+}
 
-        #g.active, #kl.active, #s.active, #ku.active, #h.active, #kr.active, #w.active, #c.active, #gm.active, #klm.active, #sm.active, #kum.active, #hm.active, #krm.active, #wm.active, #cm.active {
-            display: block;
-            color: black;
-        }
-        #gmm.active, #klmm.active, #smm.active, #kumm.active, #hmm.active, #krmm.active, #wmm.active, #cmm.active, #gmmm.active, #klmmm.active, #smmm.active, #kummm.active, #hmmm.active, #krmmm.active, #wmmm.active, #cmmm.active {
-            display: block;
-            color: black;
-        }
-        #gd.active, #kld.active, #sd.active, #kud.active, #hd.active, #krd.active, #wd.active, #cd.active, #gdd.active, #kldd.active, #sdd.active, #kudd.active, #hdd.active, #krdd.active, #wdd.active, #cdd.active {
-            display: block;
-            color: black;
-        }
-@media only screen and (min-width: 1302px) and (orientation:landscape) {  
-#ddd {
-            display: block;
-        }
-#dd {
-            display: none;
-        }
-#d {
-            display: none;
-        }
-#m {
-            display: none;
-        }
-#mm {
-            display: none;
-        }
-        
-#mmm {
-            display: none;
-        }
-} 
-@media only screen and (max-width: 1302px) and (min-width: 1042px) and (orientation:landscape) {
-#ddd {
-            display: none;
-        }
-#dd {
-            display: block;
-        }
-#d {
-            display: none;
-        }
-#m {
-            display: none;
-        }
-#mm {
-            display: none;
-        }
-        
-#mmm {
-            display: none;
-        }
-} 
-@media only screen and (max-width: 1042px) and (min-width: 942px) and (orientation:landscape) {  
-#ddd {
-            display: none;
-        }
-#dd {
-            display: none;
-        }
-#d {
-            display: block;
-        }
-#m {
-            display: none;
-        }
-#mm {
-            display: none;
-        }
-        
-#mmm {
-            display: none;
-        }
+@media only screen and (max-width: 1302px) and (min-width: 1042px) and (orientation: landscape) {
+    #d {
+        display: block;
+    }
+
+    #m {
+        display: none;
+    }
 }
-@media only screen and (min-width: 942px) and (min-width: 742px) and (orientation:portrait){  
-#ddd {
-            display: none;
-        }
-#dd {
-            display: none;
-        }
-#d {
-            display: none;
-        }
-#m {
-            display: block;
-        }
-#mm {
-            display: none;
-        }
-        
-#mmm {
-            display: none;
-        }
-} 
-@media only screen and (max-width: 742px) and (min-width: 442px) and (orientation:portrait){  
-#ddd {
-            display: none;
-        }
-#dd {
-            display: none;
-        }
-#d {
-            display: none;
-        }
-#m {
-            display: none;
-        }
-#mm {
-            display: block;
-        }
-        
-#mmm {
-            display: none;
-        }
-} 
-@media only screen and (max-width: 442px) and (min-width: 282px) and (orientation:portrait){  
-#ddd {
-            display: none;
-        }
-#dd {
-            display: none;
-        }
-#d {
-            display: none;
-        }
-#m {
-            display: none;
-        }
-#mm {
-            display: none;
-        }
-        
-#mmm {
-            display: block;
-        }
+
+@media only screen and (max-width: 1042px) and (min-width: 942px) and (orientation: landscape) {
+    #d {
+        display: block;
+    }
+
+    #m {
+        display: none;
+    }
 }
-@media only screen and (max-width: 282px) {  
-#ddd {
-            display: none;
-        }
-#dd {
-            display: none;
-        }
-#d {
-            display: none;
-        }
-#m {
-            display: none;
-        }
-#mm {
-            display: none;
-        }
-        
-#mmm {
-            display: block;
-        }
+
+@media only screen and (min-width: 942px) and (min-width: 742px) and (orientation: portrait) {
+    #d {
+        display: none;
+    }
+
+    #m {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 742px) and (min-width: 442px) and (orientation: portrait) {
+    #d {
+        display: none;
+    }
+
+    #m {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 442px) and (min-width: 282px) and (orientation: portrait) {
+    #d {
+        display: none;
+    }
+
+    #m {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 282px) {
+    #d {
+        display: none;
+    }
+
+    #m {
+        display: block;
+    }
 }
