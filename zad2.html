@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamiczne Dodawanie Pól</title>
+</head>
+<body>
+<form id="dynamicForm">
+    <div id="formFields">
+        <label for="field1">Pole 1:</label>
+        <input type="text" id="field1" name="field1"><br><br>
+    </div>
+    <button type="button" onclick="addFormField()">Dodaj pole</button>
+    <br><br>
+    <input type="submit" value="Wyślij">
+</form>
+
+<script>
+var fieldIndex = 1;
+
+function addFormField() {
+    fieldIndex++;
+    var newField = document.createElement('div');
+    newField.innerHTML = '<label for="field' + fieldIndex + '">Pole ' + fieldIndex + ':</label>' +
+                         '<input type="text" id="field' + fieldIndex + '" name="field' + fieldIndex + '"><br><br>';
+    document.getElementById('formFields').appendChild(newField);
+}
+</script>
+</body>
+</html>

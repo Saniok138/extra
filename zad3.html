@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamika w Zależności od Wyboru Użytkownika</title>
+</head>
+<body>
+<form id="userForm">
+    <label for="userSelect">Wybierz użytkownika:</label>
+    <select id="userSelect" onchange="updateFormFields()">
+        <option value="">Wybierz...</option>
+        <option value="0">Użytkownik 1</option>
+        <option value="1">Użytkownik 2</option>
+        <option value="2">Użytkownik 3</option>
+    </select><br><br>
+
+    <label for="firstName">Imię:</label>
+    <input type="text" id="firstName" name="firstName" readonly><br><br>
+
+    <label for="lastName">Nazwisko:</label>
+    <input type="text" id="lastName" name="lastName" readonly><br><br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" readonly><br><br>
+
+    <label for="age">Wiek:</label>
+    <input type="text" id="age" name="age" readonly><br><br>
+</form>
+
+<script>
+// Tablica obiektów użytkownika
+var users = [
+    { firstName: "Jan", lastName: "Kowalski", email: "jan.kowalski@example.com", age: 30 },
+    { firstName: "Anna", lastName: "Nowak", email: "anna.nowak@example.com", age: 25 },
+    { firstName: "Piotr", lastName: "Wiśniewski", email: "piotr.wisniewski@example.com", age: 35 }
+];
+
+function updateFormFields() {
+    var selectedIndex = document.getElementById('userSelect').value;
+
+    if (selectedIndex !== "") {
+        var selectedUser = users[selectedIndex];
+        document.getElementById('firstName').value = selectedUser.firstName;
+        document.getElementById('lastName').value = selectedUser.lastName;
+        document.getElementById('email').value = selectedUser.email;
+        document.getElementById('age').value = selectedUser.age;
+    } else {
+        // Resetowanie pól formularza, jeśli nie wybrano użytkownika
+        document.getElementById('firstName').value = '';
+        document.getElementById('lastName').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('age').value = '';
+    }
+}
+</script>
+</body>
+</html>
